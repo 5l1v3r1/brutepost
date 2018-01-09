@@ -7,7 +7,7 @@ if len(sys.argv[1:]) != 1:
    print "Usage: python brutepost.py [target]"
    sys.exit(0)
 target = sys.argv[1]
-bad_login = raw_input('Bad login word (Enter to analyze html):')
+bad_login = raw_input('Bad login word (Press enter to analyze html):')
 if len(bad_login) == 0:
    r = requests.post(target, data={'username':'test','password':'test'})
    print r.text
