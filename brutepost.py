@@ -26,3 +26,4 @@ for user in users:
       if bad_login not in r2: 
          print('''Found! User: {user} Password: {passwd}'''
          .format(user=user,passwd=passwd))
+         sys.exit(0)
